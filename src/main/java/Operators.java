@@ -80,7 +80,5 @@ public class Operators
         System.out.println(a);
         // Write a Java program to toggle the nth bit of a number using the XOR operator.
 
-
-
     }
 }
