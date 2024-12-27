@@ -1,5 +1,6 @@
+package Day4;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class FirstTestClass {
     public static void main(String[] args){

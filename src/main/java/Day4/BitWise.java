@@ -1,3 +1,5 @@
+package Day4;
+
 public class BitWise {
     public static void main(String[] args) {
         System.out.println(isEven(3));;

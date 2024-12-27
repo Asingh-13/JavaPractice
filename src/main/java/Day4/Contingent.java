@@ -1,3 +1,5 @@
+package Day4;
+
 import java.util.Date;
 
 public class Contingent extends BaseEmployeeType{
@@ -29,7 +31,7 @@ public class Contingent extends BaseEmployeeType{
 
     @Override
     public String toString() {
-        return "Contingent{" +
+        return "Day4.Contingent{" +
                 "Name " + super.getName()+
                 ", Id "+super.getID()+
                 ", Joining Date "+super.getDateOfJoining()+

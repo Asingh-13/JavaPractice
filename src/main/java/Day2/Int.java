@@ -1,3 +1,5 @@
+package Day2;
+
 public class Int {
     int def;
     int x = 5;

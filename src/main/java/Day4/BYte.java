@@ -1,3 +1,5 @@
+package Day4;
+
 public class BYte {
     public static void main(String[] args) {
         byte b =12;

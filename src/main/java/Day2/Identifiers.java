@@ -1,10 +1,12 @@
+package Day2;
+
 import java.awt.dnd.InvalidDnDOperationException;
 
 /*
- *This class in for practicing Identifiers.
- * Identifiers: A name in java program that can be used for identification purpose of a method, class , variable or label.
+ *This class in for practicing Day2.Identifiers.
+ * Day2.Identifiers: A name in java program that can be used for identification purpose of a method, class , variable or label.
  * Example:
- *  Class name  : Identifiers
+ *  Class name  : Day2.Identifiers
  *  method name : String
  *  Class name : String
  *  Array name: args
@@ -23,7 +25,7 @@ public class Identifiers {
     *       $
     *       _
     * 2. Identifier can't start with Digits/ Numbmers
-    * 3. Java Identifiers are case-sensitive.
+    * 3. Java Day2.Identifiers are case-sensitive.
     * 4. We can't use Reserve words.
     * 5. We can use predefined Class - but bad coding practice.
     */

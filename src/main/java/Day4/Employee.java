@@ -1,3 +1,5 @@
+package Day4;
+
 import java.util.Date;
 
 public class Employee extends BaseEmployeeType{
@@ -19,7 +21,7 @@ public class Employee extends BaseEmployeeType{
 
     @Override
     public String toString() {
-        return "Employee{" +
+        return "Day4.Employee{" +
                 "Name " + super.getName()+
                 ", Id "+super.getID()+
                 ", Joining Date "+super.getDateOfJoining()+

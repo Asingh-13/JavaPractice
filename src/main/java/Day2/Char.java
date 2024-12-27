@@ -1,3 +1,5 @@
+package Day2;
+
 public class Char {
     public static void main(String[] args) {
         char c = 2000;
