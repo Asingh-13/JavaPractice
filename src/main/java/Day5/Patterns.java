@@ -2,7 +2,8 @@ package Day5;
 
 public class Patterns {
     public static void main(String[] args) {
-         pascalsTriangle(5);
+//         pascalsTriangle(5);
+        numberedTriangle(10);
     }
 
     public static void rightAngledTriangle(int number){
@@ -88,20 +89,47 @@ public class Patterns {
 
     }
 
-    public static void pascalsTriangle(int n){
+//    public static void pascalsTriangle(int n){
+//        for (int i = 0; i < n; i++) {
+//            // Print leading spaces for alignment
+//            for (int j = 0; j < n - i - 1; j++) {
+//                System.out.print(" ");
+//            }
+//
+//            int number = 1; // Initialize the first number of the row
+//            for (int j = 0; j <= i; j++) {
+//                System.out.print(number + " ");
+//                // Calculate the next number in the row
+//                number = number * (i - j) / (j + 1);
+//            }
+//
+//            System.out.println(); // Move to the next line after each row
+//        }
+//    }
+
+    public static void numberedTriangle(int n){
         for (int i = 0; i < n; i++) {
             // Print leading spaces for alignment
             for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
             }
 
-            int number = 1; // Initialize the first number of the row
+            int number = 1; // Start the number at 1
+            boolean flag = true;
             for (int j = 0; j <= i; j++) {
-                System.out.print(number + " ");
-                // Calculate the next number in the row
-                number = number * (i - j) / (j + 1);
-            }
+                if(i %2 == 0){
+                    System.out.print(number + " ");
+                    if (j<i/2) number++;
+                    else number--;
+                }
+                else{
+                    System.out.print(number + " ");
+                    if(j<i-j -1) number++;
+                    else if(j>i-j && flag == false) number--;
+                    else flag = false;
+                }
 
+            }
             System.out.println(); // Move to the next line after each row
         }
     }
