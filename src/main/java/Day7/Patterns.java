@@ -1,7 +1,8 @@
-package Day6_30_12_2024;
+package Day7;
 
 public class Patterns {
     public static void main(String[] args) {
+        question5(19);
     }
 
     public static void decreasingDiamond(int n){
@@ -98,5 +99,60 @@ public class Patterns {
             }
             System.out.println();
         }
+    }
+    public static void question7(int n){
+        for (int i = 0; i < n; i++) {  // Loop for rows
+            for (int j = 0; j < n; j++) {  // Loop for columns
+                // Check conditions for printing stars
+                if (i <= n / 2) {  // Upper triangle
+                    if (j <= i || j >= n - i - 1) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                } else {  // Lower triangle
+                    if (j <= n - i - 1 || j >= i) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void question4(int n){
+        for (int i = 0;i<n;i++){
+            for (int j = 0;j<n;j++){
+                if (i==0 || i == n-1 || j == 0 || j == n -2 *i || j == 2*i -n +2) System.out.print("* ");
+                else System.out.print( "  ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void question5(int n){
+        System.out.print("* ".repeat(n));
+        System.out.println();
+        for (int i = 0;i<n -1 ;i++){
+            int count = n;
+            for(int j =0;j<n;j++) {
+                if(i<n/2){
+                    if (i >=0 && j >n/2 -i -1&& j < n/2 +i +1) {
+                        System.out.print("  ");
+                    }
+                    else System.out.print("* ");
+                }
+                else{
+
+                    if(j > i - n / 2 + 1 && j < n - i + n / 2 - 2) System.out.print("  ");
+                    else System.out.print("* ");
+                }
+            }
+
+            System.out.println();
+        }
+
     }
 }
