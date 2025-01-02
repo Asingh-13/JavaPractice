@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ReadingInput {
     public static void main(String[] args) throws InterruptedException {
-        clearConsole();  // Clear the console before taking input
+//        clearConsole();  // Clear the console before taking input
         takingInputFromConsole();
     }
 

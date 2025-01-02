@@ -2,7 +2,7 @@ package Day7;
 
 public class Patterns {
     public static void main(String[] args) {
-        question5(19);
+        pattern3(9);
     }
 
     public static void decreasingDiamond(int n){
@@ -153,6 +153,39 @@ public class Patterns {
 
             System.out.println();
         }
+    }
 
+    public static void pattern3(int n){
+
+        int iniS = 0;
+        int count = 0;
+        for (int i = 0;i<n ;i++){
+            for(int j =0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            for (int j = 0; j<iniS; j++){
+                System.out.print("  ");
+            }
+            for (int j = 0;j<n-i;j++){
+                System.out.print("* ");
+            }
+            iniS +=2;
+            count = iniS;
+            System.out.println();
+        }
+        iniS = count -2;
+        for (int i = 1; i<=n;i++){
+            for (int j=0;j< i;j++){
+                System.out.print("* ");
+            }
+            for(int j = 0; j<iniS;j++){
+                System.out.print("  ");
+            }
+            for (int j = 0;j<i;j++){
+                System.out.print("* ");
+            }
+            iniS-=2;
+            System.out.println();
+        }
     }
 }
