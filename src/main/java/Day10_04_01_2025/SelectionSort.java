@@ -15,7 +15,7 @@ public class SelectionSort {
                 swap(arr,i,minIndex);
             }
         }
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
     }
 
     private void swap(int []arr , int index1, int index2){

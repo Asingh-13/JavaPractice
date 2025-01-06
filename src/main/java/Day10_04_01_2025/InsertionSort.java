@@ -12,7 +12,7 @@ public class InsertionSort {
             }
             arr[j + 1] = current;
         }
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
     }
 
 }

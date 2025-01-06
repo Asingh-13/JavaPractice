@@ -13,11 +13,11 @@ public class BubbleSort {
                 }
             }
             if(isSorted) {
-                System.out.println(Arrays.toString(arr));
+//                System.out.println(Arrays.toString(arr));
                 return;
             }
         }
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
     }
 
 
