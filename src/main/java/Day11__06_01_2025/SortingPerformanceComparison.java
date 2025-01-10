@@ -67,6 +67,11 @@ public class SortingPerformanceComparison {
         long countingSortEnd = System.currentTimeMillis();
         System.out.println("countingc Sort Time: " + (countingSortEnd - countingSortStart) + " ms");
 
+        int result = ((15 + 5) / 2 * (8 - 3) + 20 % 3);
+        System.out.println(result);
+
+        int tempVar = 10;
+
 
     }
 
