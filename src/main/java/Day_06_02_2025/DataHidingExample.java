@@ -2,6 +2,8 @@ package Day_06_02_2025;
 
 public class DataHidingExample {
     public static void main(String[] args) {
+
+
         BankAccount account = new BankAccount("1234567890", 5000);
 
         // Attempting to access private fields directly (Not allowed)
