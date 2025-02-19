@@ -2,6 +2,7 @@ package Day6_30_12_2024;
 
 public class Patterns {
     public static void main(String[] args) {
+        pattern8(5);
     }
 
     public static void decreasingDiamond(int n){
@@ -99,4 +100,23 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    public static void pattern8(int n) {
+        int totalRows = n * 2 - 1;
+
+        for (int row = 1; row <= totalRows; row++) {
+            int totalCols = row <= n ? (2 * (n - row) + 1) : (2 * (row - n) + 1);
+            int totalSpaces = row <= n ? row  : (totalRows - row + 1);
+
+            for (int s = 0; s < totalSpaces; s++) {
+                System.out.print("  ");
+            }
+
+            for (int col = 0; col < totalCols; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
 }
