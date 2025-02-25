@@ -2,7 +2,7 @@ package Day7;
 
 public class Patterns {
     public static void main(String[] args) {
-        pattern3(9);
+        question5(11);
     }
 
     public static void decreasingDiamond(int n){
@@ -188,4 +188,62 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    public static void question10(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                // Condition to print stars
+                if (i == 0 || i == n - 1 || j == 0 || j == n - 1
+                        || j <= n / 2 - i || j >= n / 2 + i
+                        ) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void question11(int n) {
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j < n; j++) {
+                // Upper half of the pattern
+                if (i <= n / 2) {
+                    if (j <= n / 2 - i || j >= n / 2 + i) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+                // Lower half (mirroring the upper half)
+                else {
+                    if (j < i - n / 2 || j > n - (i - n / 2) - 1) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void question12(int n) {
+        for (int i = 0; i < 2 *n ; i++) {
+            for (int j = 0; j < 2 * n ;  j++) {
+                // Calculate left and right boundary positions for spaces
+                int leftBoundary = Math.abs(2 * n / 2 - i) +1 ;
+                int rightBoundary = 2 * n - leftBoundary - 1;
+
+                // Print * if outside boundaries, else print space
+                if (j < leftBoundary || j > rightBoundary) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
 }
